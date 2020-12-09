@@ -1,5 +1,23 @@
 package units;
 
+import lombok.Getter;
+import lombok.Setter;
+import сonnectionDB.PointsDataBase;
+import сonnectionDB.UsersDataBase;
+
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+
+@Stateless
+@Getter
+@Setter
 public class User {
-    //Класс для работы с Пользователем (будет использоваться как экземпляр для создания пользователя)
+    //Массив юзеров
+    @Inject
+    private UsersDataBase dataBase;
+
+    String login;
+    String password;
+
+
 }

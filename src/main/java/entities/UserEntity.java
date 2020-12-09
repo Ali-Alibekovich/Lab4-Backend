@@ -1,5 +1,16 @@
 package entities;
 
+import lombok.Getter;
+import lombok.Setter;
+import javax.persistence.*;
+
+@Entity
+@Getter
+@Setter
 public class UserEntity {
-    //Сущность пользователя для БД
+
+    @Id
+    String login;
+    String password;
+
 }
