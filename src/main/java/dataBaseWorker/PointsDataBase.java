@@ -1,10 +1,10 @@
-package сonnectionDB;
+package dataBaseWorker;
 
-import entities.PointEntity;
 import service.Connector;
 import javax.ejb.EJB;
+import javax.ejb.Stateful;
 
-
+@Stateful
 public class PointsDataBase {
     //Тут Будет создание и работа с ТАБЛИЦЕЙ ТОЧЕК в БД
 

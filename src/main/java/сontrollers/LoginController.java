@@ -1,9 +1,10 @@
 package сontrollers;
 
-import javax.ws.rs.ApplicationPath;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 
-@ApplicationPath("/auth")
-public class AuthController {
+@WebServlet("/login")
+public class LoginController extends HttpServlet {
     //Тут будет логика связанная с авторизацией, регистрацией (создание экземпляра пользователя и передача его в БД)
 
 }

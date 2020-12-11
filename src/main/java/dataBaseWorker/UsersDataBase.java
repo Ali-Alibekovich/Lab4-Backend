@@ -1,9 +1,12 @@
-package сonnectionDB;
+package dataBaseWorker;
 
 import service.Connector;
 
 import javax.ejb.EJB;
+import javax.ejb.Stateful;
 
+
+@Stateful
 public class UsersDataBase {
     //Тут Будет создание и работа с ТАБЛИЦЕЙ ПОЛЬЗОВАТЕЛЕЙ в БД
 
@@ -15,4 +18,5 @@ public class UsersDataBase {
 
     protected void clearUsersDataBase (){
     }
+
 }
