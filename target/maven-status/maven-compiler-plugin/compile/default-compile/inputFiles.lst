@@ -1,10 +1,11 @@
-C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\сonnectionDB\PointsDataBase.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\dataBaseWorker\PointsDataBase.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\service\AreaChecker.java
-C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\units\Point.java
-C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\units\User.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\dataBaseWorker\UsersDataBase.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\сontrollers\PointController.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\сontrollers\RestEasyConfig.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\сontrollers\UserController.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\entities\PointEntity.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\models\Point.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\service\Connector.java
-C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\сonnectionDB\UsersDataBase.java
-C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\сontrollers\AuthController.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\models\User.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\entities\UserEntity.java

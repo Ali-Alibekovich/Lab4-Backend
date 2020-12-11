@@ -1,2 +1,6 @@
-units\User.class
+models\User.class
 сontrollers\PointController.class
+сontrollers\UserController.class
+service\AreaChecker.class
+models\Point.class
+сontrollers\RestEasyConfig.class
