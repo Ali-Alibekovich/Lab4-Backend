@@ -9,7 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("users")
+@Path("points")
 @Consumes(MediaType.APPLICATION_JSON)
 public class PointController {
 
