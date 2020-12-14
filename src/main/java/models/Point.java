@@ -11,8 +11,8 @@ import java.io.Serializable;
 @Setter
 public class Point implements Serializable {
     //Объект для точек
-    double coordinateX;
-    double coordinateY;
-    double radiusR;
+    double xCoordinate;
+    double yCoordinate;
+    double rRadius;
     boolean isHit;
 }
