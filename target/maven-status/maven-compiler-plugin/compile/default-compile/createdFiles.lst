@@ -1,5 +1,11 @@
-сontrollers\PointController.class
-сontrollers\UserController.class
-dataBaseWorker\PointsDataBase.class
-models\Point.class
-сontrollers\RestEasyConfig.class
+webapp/server/controllers/classes/User.class
+webapp/server/controllers/PointController.class
+webapp/server/db/Connector.class
+webapp/server/services/PointService.class
+webapp/client/UserBean.class
+webapp/server/controllers/classes/Point.class
+webapp/server/controllers/UserController.class
+webapp/server/db/entities/PointEntity.class
+webapp/server/db/entities/UserEntity.class
+webapp/server/services/UserService.class
+webapp/server/controllers/interfaces/Controller.class
