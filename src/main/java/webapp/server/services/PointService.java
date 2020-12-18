@@ -1,5 +1,6 @@
 package webapp.server.services;
 
+import webapp.server.controllers.classes.Point;
 import webapp.server.db.Connector;
 import webapp.server.db.entities.PointEntity;
 
@@ -15,7 +16,7 @@ public class PointService {
     @EJB
     Connector connector;
 
-    private ArrayList<PointEntity> points = new ArrayList<>();
+    private ArrayList<Point> points = new ArrayList<>();
 
 
     /*
@@ -29,12 +30,21 @@ public class PointService {
         entity.setR(r);
         entity.setCreationTime(new Date());
         entity.setOwner(owner);
+        entity.setHit(true);
         connector.getEntityManager().persist(entity);
-        points.add(entity);
+        Point point = new Point();
+        point.setX(x);
+        point.setY(y);
+        point.setR(r);
+        point.setOwner(owner);
+        point.setDate(entity.getCreationTime());
+        point.setHit(entity.getHit());
+        points.add(point);
     }
 
-    public ArrayList<PointEntity> getUserPoints(String owner)
+    public ArrayList<Point> getUserPoints(String owner)
     {
-        return (ArrayList<PointEntity>) points.stream().filter(p -> p.getOwner().equals(owner)).collect(Collectors.toList());
+        System.out.println("Это логин " + owner);
+        return points;
     }
 }

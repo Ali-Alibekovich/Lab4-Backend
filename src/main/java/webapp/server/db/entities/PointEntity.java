@@ -14,8 +14,17 @@ public class PointEntity {
     double x;
     double y;
     double r;
+    boolean hit;
     Date creationTime;
     String owner;
+
+    public void setHit(boolean hit) {
+        this.hit = hit;
+    }
+
+    public boolean getHit() {
+        return hit;
+    }
 
     public long getId() {
         return id;
