@@ -15,7 +15,6 @@ public class PointEntity {
     double y;
     double r;
     boolean hit;
-    Date creationTime;
     String owner;
 
     public void setHit(boolean hit) {
@@ -56,14 +55,6 @@ public class PointEntity {
 
     public void setR(double r) {
         this.r = r;
-    }
-
-    public Date getCreationTime() {
-        return creationTime;
-    }
-
-    public void setCreationTime(Date creationTime) {
-        this.creationTime = creationTime;
     }
 
     public String getOwner() {

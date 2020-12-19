@@ -4,6 +4,7 @@ C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\client\UserBean.j
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\db\entities\PointEntity.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\controllers\RestEasyConfig.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\controllers\interfaces\Controller.java
+C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\services\AreaChecker.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\controllers\UserController.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\db\entities\UserEntity.java
 C:\Users\user\Desktop\GitHub\Lab4-Backend\src\main\java\webapp\server\db\Connector.java

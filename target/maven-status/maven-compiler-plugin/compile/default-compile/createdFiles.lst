@@ -7,6 +7,7 @@ webapp\server\controllers\classes\User.class
 webapp\server\db\Connector.class
 webapp\server\db\entities\UserEntity.class
 webapp\server\controllers\interfaces\Controller.class
+webapp\server\services\AreaChecker.class
 webapp\server\services\PointService.class
 webapp\server\db\entities\PointEntity.class
 webapp\server\controllers\UserController.class
