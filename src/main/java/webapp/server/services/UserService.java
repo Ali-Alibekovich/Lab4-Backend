@@ -5,7 +5,6 @@ import webapp.server.db.entities.UserEntity;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import javax.persistence.Query;
-import java.util.List;
 
 @Singleton
 public class UserService {
@@ -25,7 +24,7 @@ public class UserService {
         entity.setLogin(login);
         entity.setPassword(password);
         //TODO:тоже так понимаю не будет из-за contains
-        if (checkEntity(login,password)){
+        if (connector.getEntityManager().find(entity.getClass(),entity.getLogin()) == null){
             connector.getEntityManager().persist(entity);
             state = true;
         }
@@ -42,10 +41,11 @@ public class UserService {
         entity.setLogin(login);
         entity.setPassword(password);
         //TODO:не работает
-        Query query = connector.getEntityManager().createQuery("SELECT entity FROM UserEntity entity WHERE login=:log and password=:pas");
-        query.setParameter("log",login).setParameter("pas", password);
-        List list = query.getResultList();
+        Query query = connector.getEntityManager().createQuery("SELECT entity FROM UserEntity entity WHERE login=:log and password=:pass");
+        query.setParameter("log",login);
+        query.setParameter("pass", password);
 
-        return list.isEmpty();
+        return  !query.getResultList().isEmpty();
     }
+
 }

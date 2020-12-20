@@ -6,7 +6,10 @@ import webapp.server.db.entities.PointEntity;
 
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
+import javax.persistence.Entity;
+import javax.persistence.Query;
 import java.util.ArrayList;
+import java.util.List;
 
 @Singleton
 public class PointService {
@@ -29,7 +32,13 @@ public class PointService {
     }
 
     public ArrayList<Point> getUserPoints(String owner) {
-        return points;
+        ArrayList<Point> ownerPoints = new ArrayList<>();
+        for (Point point : points) {
+            if(point.getOwner().equals(owner)){
+                ownerPoints.add(point);
+            }
+        }
+        return ownerPoints;
     }
 
 
