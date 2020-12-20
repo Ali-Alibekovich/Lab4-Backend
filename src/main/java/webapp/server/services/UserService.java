@@ -21,7 +21,7 @@ public class UserService {
 
         UserEntity entity = new UserEntity();
         entity.setLogin(login);
-        entity.setLogin(password);
+        entity.setPassword(password);
 
         if (!connector.getEntityManager().contains(entity.getLogin())){
             connector.getEntityManager().persist(entity);
@@ -39,7 +39,7 @@ public class UserService {
 
         UserEntity entity = new UserEntity();
         entity.setLogin(login);
-        entity.setLogin(password);
+        entity.setPassword(password);
 
         return connector.getEntityManager().contains(entity);
     }
