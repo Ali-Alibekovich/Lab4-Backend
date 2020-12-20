@@ -22,7 +22,7 @@ public class UserService {
         UserEntity entity = new UserEntity();
         entity.setLogin(login);
         entity.setPassword(password);
-
+        //TODO:тоже так понимаю не будет из-за contains
         if (!connector.getEntityManager().contains(entity.getLogin())){
             connector.getEntityManager().persist(entity);
             state = true;
@@ -40,7 +40,7 @@ public class UserService {
         UserEntity entity = new UserEntity();
         entity.setLogin(login);
         entity.setPassword(password);
-
+        //TODO:не работает
         return connector.getEntityManager().contains(entity);
     }
 }
