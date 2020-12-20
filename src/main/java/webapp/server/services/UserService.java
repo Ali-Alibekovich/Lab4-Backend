@@ -4,6 +4,7 @@ import webapp.server.db.Connector;
 import webapp.server.db.entities.UserEntity;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
+import javax.management.Query;
 
 @Singleton
 public class UserService {
@@ -23,11 +24,10 @@ public class UserService {
         entity.setLogin(login);
         entity.setPassword(password);
         //TODO:тоже так понимаю не будет из-за contains
-        if (!connector.getEntityManager().contains(entity.getLogin())){
+        if (checkEntity(login,password)){
             connector.getEntityManager().persist(entity);
             state = true;
         }
-
         return state;
     }
 
@@ -41,6 +41,6 @@ public class UserService {
         entity.setLogin(login);
         entity.setPassword(password);
         //TODO:не работает
-        return connector.getEntityManager().contains(entity);
+        return connector.getEntityManager().find(entity.getClass(),login) == null;
     }
 }
