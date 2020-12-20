@@ -8,7 +8,6 @@ public class Point {
     private double y;
     private double r;
     private boolean hit;
-    private Date date;
     private String owner;
 
 
@@ -44,9 +43,6 @@ public class Point {
         this.owner = owner;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public void setHit(boolean hit) {
         this.hit = hit;
@@ -55,4 +51,6 @@ public class Point {
     public boolean isHit() {
         return hit;
     }
+
+
 }
