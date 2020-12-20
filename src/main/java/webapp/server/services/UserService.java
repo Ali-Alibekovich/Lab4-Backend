@@ -4,7 +4,8 @@ import webapp.server.db.Connector;
 import webapp.server.db.entities.UserEntity;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
-import javax.management.Query;
+import javax.persistence.Query;
+import java.util.List;
 
 @Singleton
 public class UserService {
@@ -41,6 +42,10 @@ public class UserService {
         entity.setLogin(login);
         entity.setPassword(password);
         //TODO:не работает
-        return connector.getEntityManager().find(entity.getClass(),login) == null;
+        Query query = connector.getEntityManager().createQuery("SELECT entity FROM UserEntity entity WHERE login=:log and password=:pas");
+        query.setParameter("log",login).setParameter("pas", password);
+        List list = query.getResultList();
+
+        return list.isEmpty();
     }
 }
